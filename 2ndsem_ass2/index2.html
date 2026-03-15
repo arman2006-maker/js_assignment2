@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⛅ Async Weather Tracker</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <h1><span>⛅</span>Async Weather Tracker</h1>
+        </header>
+
+        <div class="grid">
+            <div class="panel">
+                <div class="panel-label">Search City</div>
+                <div class="search-row">
+                    <input type="text" id="cityInput" placeholder="e.g. Delhi, London" autocomplete="off" />
+                    <button class="btn" id="searchBtn" onclick="handleSearch()">Search</button>
+                </div>
+                <div class="history-header">
+                    <div class="history-label">Search History</div>
+                    <button class="clear-btn" id="clearBtn" onclick="clearHistory()" style="display:none">✕
+                        Clear</button>
+                </div>
+                <div class="history-tags" id="historyTags"></div>
+            </div>
+            <div class="panel">
+                <div class="panel-label">Weather Info</div>
+                <div id="weatherDisplay"><span class="weather-empty">Enter a city to see weather info.</span></div>
+            </div>
+        </div>
+
+        <div class="console-panel">
+            <div class="panel-label">Console – Event Loop</div>
+            <div class="console-output" id="consoleOutput"></div>
+        </div>
+    </div>
+
+    <script src="./script2 (1).js"></script>
+</body>
+
+</html>
